@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Motiva Sans", sans-serif;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 390px;
+    width: 712px;
+}
+
+.login-form-header {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.login-form-area {
+    padding: 24px 32px;
+    border-radius: 5px;
+
+    display: flex;
+
+    background-color: #181a21;
+}
+
+.login-form-area-L, 
+.login-form-area-R {
+padding-top: 10px;
+}
+
+.login-form-area-L {
+    flex: 2;
+    padding-right: 30px;
+}
+.login-form-area-R {
+    flex: 1;
+}
+
+.login-form-text, .login-form-text a {
+    margin-top: 10px;
+    color: #afafaf;
+    font-size: 12px;
+}
+
+.login-way {
+    color: #1999ff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.login-form-area-L label {
+    display: block;
+    margin-bottom: 10px;
+}
+.login-form-area-L input[type="text"],
+.login-form-area-L input[type="password"] {
+    width: 100%;
+    height: 39px;
+
+    font-size: 15px;
+    color: white;
+
+    margin-top: 5px;
+    padding: 5px 15px;
+
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #32353c;
+}
+
+.login-form-area-L input[type="text"]:hover,
+.login-form-area-L input[type="password"]:hover {
+    background-color: #323842;
+}
+
+.login-form-area-L input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+.login-form-area-L input[type="submit"] {
+    display: block;
+    margin: auto;
+
+    font-size: 16px;
+    color: white;
+
+    border: none;
+    border-radius: 2px;
+    background-color: #1999ff;
+
+    width: 270px;
+    height: 47px;
+}
+
+.login-form-area-L input[type="submit"]:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.login-form-area-L div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-form-text a:hover {
+    opacity: 0.9;
+}
+
+.login-form-qr img {
+    width: 200px; 
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+@media (max-width: 655px) {
+    section {
+        background-color: black;
+    }
+    .login-form {
+        height: auto;
+    }
+    .login-form-header {
+        text-align: center;
+    }
+    .login-form-area {
+        flex-direction: column;
+        background-color: transparent;
+    }
+    .login-form-area-L {
+        padding-right: 0;
+    }
+    .login-form-area-R {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
